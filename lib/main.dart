@@ -56,7 +56,7 @@ class MyApp extends HookConsumerWidget {
                 _flutterMidi.stopMidiNote(midi: i);
               }
 
-              int midiNum = max((Random().nextInt(255) - 127), 32);
+              int midiNum = (Random().nextInt(78) + 48);
               print(midiNum);
               _flutterMidi.playMidiNote(midi: midiNum);
               _flutterMidi.playMidiNote(midi: midiNum + 4);
